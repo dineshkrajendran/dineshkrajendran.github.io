@@ -1,0 +1,1 @@
+*This repository is an adapted fork from [StartBootstrap/startbootstrap-resume](https://github.com/StartBootstrap/startbootstrap-resume) although the history before fork is not visible. I am extremely grateful to the wonderful work done by :sparkles: Bootstrap team :sparkles:.*

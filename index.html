@@ -1,28 +1,318 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Workspace demo one</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/styles.css">
-        <script src="/script.js" defer></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dinesh  Kumar</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>
-        <h1>Workspace demo  one</h1>
-        <p>
-            This is the demo page for the official <span>Chrome DevTools</span>
-            tutorial on setting up and using a workspace.
-    
-        </p>
-        <div>
-            He is from: <slot name="country"></slot>
-            We called him: <slot name="name"</slot>        
-        </div
-        <div>
-            <span slot="country"> India </span>
-           <span slot="name"> Salesforce Kid</span>
-        </div>                                       
-        <button type="button" onclick=getDataAttributes(event) name="Click Me Bruh" data-id="xman">Click Me Bruh</button>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Dinesh Kumar </span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li>
+                       <div class="col-xs-12 col-sm-12">
+                         <div class="col-inner ts-30">
+                            <a href="./documents/dineshkumarCv.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+                          </div>
+                       </div>
+                     </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Dinesh Kumar 
+                        <span class="text-primary">Rajendran</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Madurai · India ·
+                        <a href="mailto:dineshkumar727@gmail.com">dineshkumar727@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">
+                        12+ years of overall experience in IT industry and 9+ years of experience in salesforce platform including designing, developing, and 
+implementing customized solutions for various clients. Proficient in Apex, Aura, and Lightning web components, with a strong understanding 
+of data modeling and integration techniques. Proven ability to collaborate with cross-functional teams to deliver high-quality solutions that 
+meet business requirements and enhance user experience. 
+                    </p>
+
+                    <div class="social-icons">
+                        <!--Icons: https://www.w3schools.com/icons/fontawesome5_icons_brands.asp
+                                   https://fontawesome.com/v4.7.0/cheatsheet/-->
+                        <a class="social-icon" href="https://www.linkedin.com/in/dinesh-kumar-r"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://medium.com/@dineshkumar727"><i class="fab fa-medium-m"></i></a>
+                        <a class="social-icon" href="https://github.com/dineshkumar727"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.salesforce.com/trailblazer/diner15">
+                        <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M894.030769 655.753846H945.230769l-23.630769-80.738461 23.630769-80.738462h-86.646154c-15.753846-47.261538-37.415385-94.523077-68.923077-141.784615-29.538462-43.323077-64.984615-84.676923-110.276923-124.061539-45.292308-37.415385-100.430769-70.892308-165.415384-96.492307l-3.938462-1.969231-3.938461 1.969231s-25.6 5.907692-61.046154 23.630769c-27.569231 13.784615-61.046154 33.476923-96.492308 61.046154-53.169231 41.353846-110.276923 100.430769-153.6 185.107692-13.784615 27.569231-27.569231 59.076923-37.415384 92.553846H78.769231l23.630769 80.738462L78.769231 655.753846h47.261538c-1.969231 25.6-3.938462 51.2-3.938461 76.8 0 13.784615 0 29.538462 1.96923 45.292308v7.876923l5.907693 3.938461s41.353846 23.630769 108.307692 45.292308c68.923077 23.630769 163.446154 45.292308 277.661539 45.292308 90.584615 0 191.015385-13.784615 297.353846-55.138462 25.6-9.846154 53.169231-21.661538 78.76923-35.446154l5.907693-3.938461h1.969231v-53.169231c0-19.692308-1.969231-45.292308-5.907693-76.8zM116.184615 628.184615l15.753847-53.16923-15.753847-53.169231h791.63077l-15.753847 53.169231 15.753847 53.16923H116.184615z m141.784616-133.907692l57.107692-96.492308 1.969231-1.96923 49.230769-80.738462 82.707692 104.369231 49.23077-49.230769L551.384615 433.230769l80.738462-118.153846 131.938461 179.2H257.969231z m-51.2-53.169231c9.846154-21.661538 21.661538-43.323077 33.476923-63.015384 1.969231-3.938462 3.938462-5.907692 5.907692-9.846154 1.969231-1.969231 3.938462-5.907692 5.907692-7.876923C354.461538 202.830769 504.123077 157.538462 506.092308 157.538462l3.938461-1.969231 3.938462 1.969231c106.338462 43.323077 181.169231 108.307692 234.338461 181.16923 17.723077 21.661538 31.507692 45.292308 45.292308 68.923077 15.753846 27.569231 27.569231 57.107692 37.415385 84.676923h-31.507693c-43.323077-114.215385-128-238.276923-289.476923-307.2-33.476923 9.846154-212.676923 78.769231-293.415384 307.2H185.107692c5.907692-15.753846 13.784615-33.476923 21.661539-51.2z m665.6 320.984616v7.876923l-7.876923 3.938461c-124.061538 61.046154-242.215385 82.707692-348.553846 82.707693-192.984615 0-336.738462-68.923077-358.4-80.738462-3.938462-1.969231-5.907692-3.938462-7.876924-3.938461h-1.96923v-7.876924c0-37.415385 0-70.892308 3.938461-104.36923h29.538462c-3.938462 25.6-5.907692 57.107692-3.938462 92.553846 27.569231 13.784615 129.969231 59.076923 267.815385 70.892308 31.507692-17.723077 53.169231-53.169231 1.969231-96.492308h-3.938462l-1.969231-1.969231-1.96923-1.969231-1.969231-1.96923v-1.969231l-1.969231-1.969231v-1.969231l-1.969231-1.969231V708.923077c-7.876923-15.753846 0-31.507692 47.261539-35.446154 13.784615-1.969231 61.046154 1.969231 43.323077-15.753846h23.630769c13.784615 15.753846 13.784615 35.446154-57.107692 43.323077-9.846154 0-13.784615 5.907692-11.815385 9.846154h1.969231c72.861538 17.723077 90.584615 70.892308 84.676923 108.307692 84.676923-5.907692 177.230769-27.569231 269.784615-72.861538 0-15.753846 0-49.230769-5.907692-94.523077h29.538461c0 7.876923 1.969231 15.753846 1.969231 23.630769 13.784615 53.169231 11.815385 84.676923 11.815385 86.646154z"  /></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience <i class="fas fa-briefcase"></i></h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Salesforce Developer and Team Lead</h3>
+                            <div class="subheading mb-3"><a href="https://www.pwc.com">PWC Acceleration Center India 
+ </a></div>
+                            <p>
+                                <ul>
+        <li>Lead developer in the team, handling complex requirements, end to end ownership of deliveries to production – including analysis, planning, model, design, develop, debug, performance issues, document, and push to production, go live and post live support.</li>
+        <li>Participated in code reviews and provided feedback to team members to ensure adherence to coding best practices.</li>
+        <li>Integrated Salesforce data with external system by exposing apex web services and standard api’s for inbound and access the external system Api in Salesforce using apex/ ajax call-out and external object for outbound calls.&nbsp;</li>
+        <li>Salesforce data migration and data cleaning activities using MS excel tool and its formulas.&nbsp;</li>
+        <li>Hands-on Lead for an Agile team working in a continuous delivery Model.&nbsp;</li>
+        <li>Implemented sales cloud with price-book, product, opportunity product.&nbsp;</li>
+        <li>implemented service cloud with case, entitlement and omni channel.&nbsp;</li>
+        <li>Designed and developed customized Salesforce solutions to meet business requirements, including custom objects, fields,workflows, validation rules. AURA/LWC, APEX Batch class&nbsp;</li>
+    </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2020 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Salesforce Developer</h3>
+                            <div class="subheading mb-3"><a href="https://www.techmahindra.com">Tech Mahindra</a></div>
+                            <p><strong>Apttus Managed Service Support</strong></p>
+                            <p>
+<ul>
+    <li>Providing Salesforce support to the customers who enrolled the Apttus Managed-Service subscription along with the Apttus products.</li>
+    <li>Analyzed the salesforce enhancement request from Apttus customers and provided an estimation and charges for the enhancement.</li>
+    <li>Implemented the customization on customer's Salesforce instance using Apex triggers, API integration, Batch, Lightning web components, and out-of-box configuration.</li>
+    <li>Managed Meeting all project requirement within budget constraints.</li>
+</ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Feb 2019 - Mar 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Salesforce Developer - Chatbot implementation</h3>
+                            <div class="subheading mb-3"><a href="https://www.objectfrontier.com">Object Frontier Software</a>
+                                </div>
+                             <p><strong>Google Dialogflow and the Salesforce Live agent Implementation.</strong></p>
+                            <p>
+                               
+<ul>
+    <li>Integrated Salesforce Live Agent with Google Dialogflow.</li>
+    <li>Created a connected app and apex web services that can consume by an external system, and Developed a custom chat that communicate between Live Agent API and Google Dialogue flow API./li>
+    <li>Created a Visualforce page as a JavaScript container to build a custom chat page.</li>
+</ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jun 2018 - Jan 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Salesforce Admin</h3>
+                                <div class="subheading mb-3"><a href="www.osprosys.com">Osprosys System</a></div>
+                            <p><strong>Administrating the Sales cloud application as a solo Salesforce Admin.</strong></p>
+                            <p>
+<ul>
+    <li>Created and maintained Salesforce reports and dashboards to track the key performance indicators.</li>
+    <li>Created email templates and email alerts.</li>
+    <li>Implemented an email notification when there is an important change.</li>
+    <li>Configured the Pardot marketing cloud to add a score to the leads based on certain criteria.</li>
+    <li>Configured and maintained Salesforce objects, fields, record types, page layouts, validation rules, and workflows.</li>
+</ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Mar 2017 - May 2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Salesforce co-ordinator</h3>
+                                <div class="subheading mb-3"><a href="www.hpe.com">Hewlett Packard Global E Business</a></div>
+                            <p>
+<ul>
+    <li>Created and maintained Salesforce reports for the support team, including weekly status updates about open cases, closed cases,and overdue backlog cases.</li>
+    <li>Worked on service cloud for the post-sales HP warranty support business.</li>
+    <li>Regularly maintaining and cleaning up the Salesforce queue.</li>
+    <li>Report unattended and aging cases to the management team. Record all the monthly and yearly metric data in SharePoint.</li>
+</br>     
+<p><strong>Siebel Co-ordinator.</strong></p>
+      <li>Extract the data from Siebel and create the report in Excel, and send a pivot chart with daily, weekly and monthly inflow and outflow volumes and maintain the data in the SharePoint.</li>
+</ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Mar 2011 - Jun 2016</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education <i class="fas fa-book-open"></i></h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Presidency College</h3>
+                            <div class="subheading mb-3">Bachelor of Business Ecomomics</div>
+                            <div><strong>Majors: </strong>Statistic,Macro and Micro Economics</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Aprr 2004 - Mar 2007</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-1">Certifications</h3>
+                <div class="container">
+                <div class="row gx-0">
+                        <a class="portfolio-item px-3 px-lg-3 " href="#!">
+                            <div class="subheading mb-3" style="margin: 0px 28px;"> Salesforce Admin </div>
+                            <div class="caption-content">
+                            
+                            <img class="img-fluid" align="left" height="300px" width="230px" src="assets/img/SystemAdmin.png"></div>
+                        </a>
+                        <a class="portfolio-item px-3 px-lg-3 " href="#!">
+                            <div class="subheading mb-3" style="margin: 0px 28px;"> Platform Developer 1</div>
+                            <div class="caption-content">
+                            
+                            <img class="img-fluid" align="left" height="300px" width="230px" src="assets/img/PlanfmDev.png"></div>
+                        </a><a class="portfolio-item px-3 px-lg-3 " href="#!">
+                            <div class="subheading mb-3" style="margin: 0px 40px;"> Apttus CLM</div>
+                            <div class="caption-content">
+                            
+                            <img class="img-fluid" align="left" height="300px" width="180px" src="assets/img/apttusCLM.png"></div>
+                        </a>
+                    </div>
+                    </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills <i class="fas fa-hammer"></i></h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                     <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-salesforce"></i></li>
+                        <li class="list-inline-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="70" width="32" viewBox="0 0 384 512"><path fill="#5c626a" d="M0 256L28.5 28c2-16 15.6-28 31.8-28H228.9c15 0 27.1 12.1 27.1 27.1c0 3.2-.6 6.5-1.7 9.5L208 160H347.3c20.2 0 36.7 16.4 36.7 36.7c0 7.4-2.2 14.6-6.4 20.7l-192.2 281c-5.9 8.6-15.6 13.7-25.9 13.7h-2.9c-15.7 0-28.5-12.8-28.5-28.5c0-2.3 .3-4.6 .9-6.9L176 288H32c-17.7 0-32-14.3-32-32z"></path></svg>
+                        </li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i> </li>
+                        <li class="list-inline-item"> <i class="fab fa-git"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-jira"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-chart-bar"></i></li>
+
+                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                         <li class="list-inline-item">
+                        <svg  height="95" width="45"  viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70.9119 99.5723C72.4869 100.189 74.2828 100.15 75.8725 99.3807L96.4604 89.4231C98.624 88.3771 100 86.1762 100 83.7616V16.2392C100 13.8247 98.624 11.6238 96.4604 10.5774L75.8725 0.619067C73.7862 -0.389991 71.3446 -0.142885 69.5135 1.19527C69.252 1.38636 69.0028 1.59985 68.769 1.83502L29.3551 37.9795L12.1872 24.88C10.5891 23.6607 8.35365 23.7606 6.86938 25.1178L1.36302 30.1525C-0.452603 31.8127 -0.454583 34.6837 1.35854 36.3466L16.2471 50.0001L1.35854 63.6536C-0.454583 65.3164 -0.452603 68.1876 1.36302 69.8477L6.86938 74.8824C8.35365 76.2395 10.5891 76.34 12.1872 75.1201L29.3551 62.0207L68.769 98.1651C69.3925 98.7923 70.1246 99.2645 70.9119 99.5723ZM75.0152 27.1813L45.1092 50.0001L75.0152 72.8189V27.1813Z" fill="white"/>
+</mask>
+<path d="M96.4614 10.593L75.8567 0.62085C73.4717 -0.533437 70.6215 -0.0465506 68.7498 1.83492L1.29834 63.6535C-0.515935 65.3164 -0.513852 68.1875 1.30281 69.8476L6.8125 74.8823C8.29771 76.2395 10.5345 76.339 12.1335 75.1201L93.3604 13.18C96.0854 11.102 100 13.0557 100 16.4939V16.2535C100 13.84 98.6239 11.64 96.4614 10.593Z" fill="#D9D9D9"/>
+
+<path d="M96.4614 89.4074L75.8567 99.3797C73.4717 100.534 70.6215 100.047 68.7498 98.1651L1.29834 36.3464C-0.515935 34.6837 -0.513852 31.8125 1.30281 30.1524L6.8125 25.1177C8.29771 23.7605 10.5345 23.6606 12.1335 24.88L93.3604 86.8201C96.0854 88.8985 100 86.9447 100 83.5061V83.747C100 86.1604 98.6239 88.3603 96.4614 89.4074Z" fill="#E6E6E6"/>
+
+
+<path d="M75.8578 99.3807C73.4721 100.535 70.6219 100.047 68.75 98.1651C71.0564 100.483 75 98.8415 75 95.5631V4.43709C75 1.15852 71.0565 -0.483493 68.75 1.83492C70.6219 -0.0467614 73.4721 -0.534276 75.8578 0.618963L96.4583 10.5773C98.6229 11.6237 100 13.8246 100 16.2391V83.7616C100 86.1762 98.6229 88.3761 96.4583 89.4231L75.8578 99.3807Z" fill="grey"/>
+
+<path style="mix-blend-mode:overlay" opacity="10.25" fill-rule="evenodd" clip-rule="evenodd" d="M70.8508 99.5723C72.4258 100.189 74.2218 100.15 75.8115 99.3807L96.4 89.4231C98.5635 88.3771 99.9386 86.1762 99.9386 83.7616V16.2391C99.9386 13.8247 98.5635 11.6239 96.4 10.5774L75.8115 0.618974C73.7252 -0.390085 71.2835 -0.142871 69.4525 1.19518C69.1909 1.38637 68.9418 1.59976 68.7079 1.83493L29.2941 37.9795L12.1261 24.88C10.528 23.6606 8.2926 23.7605 6.80833 25.1177L1.30198 30.1524C-0.51354 31.8126 -0.515625 34.6837 1.2975 36.3465L16.186 50L1.2975 63.6536C-0.515625 65.3164 -0.51354 68.1875 1.30198 69.8476L6.80833 74.8824C8.2926 76.2395 10.528 76.339 12.1261 75.1201L29.2941 62.0207L68.7079 98.1651C69.3315 98.7923 70.0635 99.2645 70.8508 99.5723ZM74.9542 27.1812L45.0481 50L74.9542 72.8188V27.1812Z" fill="grey"/>
+</svg></li>
+                    </ul>
+                    <p>My primarily skills are customization in Salesforce using Apex(Java paradigms) programing Languages in server side and LWC framework with javascript on the clint side</p>
+                    <p>Expertise in using various CI-CD tools such as Azure DevOpps,Github,Flosum,Auto-Rabit, Salesforce CLI,</p>
+                    <div class="subheading mb-3">Non-technical skills</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <strong>Organisational skills:</strong> Self management of workload, timely progress on sprint deliverables and coherently structured documentation.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <strong>Team work skills:</strong> Collaboration with teams to successfully deliver projects.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <strong>Leadership skills:</strong> Take lead on initiatives on team building activities and knowledge sharing sessions.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests <i class="fas fa-icons"></i></h2>
+                   <p> Apart from being a Salesforce developer, I enjoy most of my time being outdoors. I enjoy driving the car and motorcycle, treckking in western ghats mountain and rain forest specially located in southern india.
+
+When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, and I spend a goood amount of my free time exploring the latest technology advancements in interent.</p>
+                   
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards <i class="fas fa-award"></i></h2>
+                    <ul class="fa-ul mb-0">
+                  <div class="container">
+                    <div class="row gx-0">
+                            <a class="portfolio-item px-3 px-lg-3 " href="#!">
+                                <div class="subheading mb-3" style="margin: 0px 28px;">Standing Oviation</div>
+                                <div class="caption-content">
+                                <img class="img-fluid" align="left" height="300px" width="230px" src="assets/img/standingOviation.png"></div>
+                            </a>
+                            <a class="portfolio-item px-3 px-lg-5 " href="#!">
+                                <div class="subheading mb-3" style="margin: 0px 28px;"> Pat On Bat</div>
+                                <div class="caption-content">
+                                <img class="img-fluid" align="left" height="300px" width="230px" src="assets/img/patOnBat.png"></div>
+                            </a>
+                     </div>
+                    </div>
+                    </ul>
+                </div>
+            </section>
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Base Template for this page used from https://startbootstrap.com/theme/resume</div></div>
+                </div>
+            </div>
+        </footer>
+            
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        </div>
     </body>
 </html>
